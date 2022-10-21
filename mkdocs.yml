@@ -1,0 +1,204 @@
+site_name: Svelte Action
+site_url: 'https://svelteaction.netlify.app/'
+site_author: Mohamed Nesredin
+site_description: A collection of utility functions, which help you build powerful
+  app.
+repo_name: Mohamed-Kaizen/svelteaction-docs
+repo_url: https://github.com/Mohamed-Kaizen/svelteaction-docs
+edit_uri: https://github.com/Mohamed-Kaizen/svelteaction-docs/tree/master/docs
+copyright: Copyright &copy; 2022 Mohamed Nesredin
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: static/svelteaction.png
+  icon:
+    repo: fontawesome/brands/github-alt
+  features:
+  - navigation.tabs
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - search.share
+  - content.tabs.link
+  - content.code.annotate
+  - social
+  font:
+    text: Poppins
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: deep purple
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: purple
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+plugins:
+- search
+- macros
+- git-authors:
+    show_contribution: true
+    show_line_count: true
+    count_empty_lines: true
+- minify:
+    minify_html: true
+- git-revision-date-localized:
+    type: timeago
+nav:
+- Home: index.md
+- Core:
+  - Active Element: ./core/active_element.md
+  - Async State: ./core/async_state.md
+  - Breakpoints: ./core/breakpoints.md
+  - Broadcast Channel: ./core/broadcast_channel.md
+  - Clipboard: ./core/clipboard.md
+  - DOM Visible: ./core/dom_visible.md
+  - Drop Zone: ./core/drop_zone.md
+  - Element Bounding: ./core/element_bounding.md
+  - Element Size: ./core/element_size.md
+  - Event Listener: ./core/event_listener.md
+  - Eye Dropper: ./core/eye_dropper.md
+  - Favicon: ./core/favicon.md
+  - File Dialog: ./core/file_dialog.md
+  - Fps: ./core/fps.md
+  - Fullscreen: ./core/fullscreen.md
+  - Geolocation: ./core/geolocation.md
+  - Image: ./core/image.md
+  - Intersection Observer: ./core/intersection_observer.md
+  - Media Query: ./core/media_query.md
+  - Memory: ./core/memory.md
+  - Mouse: ./core/mouse.md
+  - Mutation Observer: ./core/mutation_observer.md
+  - Network: ./core/network.md
+  - Notification: ./core/notification.md
+  - Object Url: ./core/object_url.md
+  - Permission: ./core/permission.md
+  - Preferred Contrast: ./core/preferred_contrast.md
+  - Preferred Dark: ./core/preferred_dark.md
+  - Preferred Languages: ./core/preferred_languages.md
+  - Preferred Reduced Motion: ./core/preferred_reduced_motion.md
+  - Raf Fn: ./core/raf_fn.md
+  - Resize Observer: ./core/resize_observer.md
+  - Supported: ./core/supported.md
+  - Text Direction: ./core/text_direction.md
+  - Useragent: ./core/useragent.md
+  - Wake Lock: ./core/wake_lock.md
+  - Websocket: ./core/websocket.md
+  - Window Focus: ./core/window_focus.md
+  - Window Scroll: ./core/window_scroll.md
+  - Window Size: ./core/window_size.md
+  - Worker: ./core/worker.md
+- Shared:
+  - Adjust with unit: ./shared/adjust_with_unit.md
+  - Args Flat: ./shared/args_flat.md
+  - Counter: ./shared/counter.md
+  - Create event hook: ./shared/create_event_hook.md
+  - Create singleton promise: ./shared/create_singleton_promise.md
+  - Curry:
+    - Chain: ./shared/curry/chain.md
+    - Compose: ./shared/curry/compose.md
+    - Partial: ./shared/curry/partial.md
+  - Date format: ./shared/date_format.md
+  - Debounce fn: ./shared/debounce_fn.md
+  - Dicts:
+    - Contains: ./shared/dicts/contains.md
+    - Enhance: ./shared/dicts/enhance.md
+    - Invert: ./shared/dicts/invert.md
+    - Listify: ./shared/dicts/listify.md
+    - Map: ./shared/dicts/map.md
+    - Map values: ./shared/dicts/map_values.md
+    - Picker: ./shared/dicts/picker.md
+    - Pops: ./shared/dicts/pops.md
+    - Shake: ./shared/dicts/shake.md
+  - Interval: ./shared/interval.md
+  - Interval fn: ./shared/interval_fn.md
+  - Last changed: ./shared/last_changed.md
+  - Len: ./shared/len.md
+  - Lists:
+    - Cluster: ./shared/lists/cluster.md
+    - Count: ./shared/lists/count.md
+    - Enhance: ./shared/lists/enhance.md
+    - First: ./shared/lists/first.md
+    - Flat: ./shared/lists/flat.md
+    - Fork: ./shared/lists/fork.md
+    - Group: ./shared/lists/group.md
+    - Intersects: ./shared/lists/intersects.md
+    - Last: ./shared/lists/last.md
+    - List: ./shared/lists/list.md
+    - Merge: ./shared/lists/merge.md
+    - Select: ./shared/lists/select.md
+    - Sift: ./shared/lists/sift.md
+    - Sort: ./shared/lists/sort.md
+    - Unique: ./shared/lists/unique.md
+  - Make destructurable: ./shared/make_destructurable.md
+  - Math:
+    - Average: ./shared/math/average.md
+    - Clamp: ./shared/math/clamp.md
+    - Create generic pojection: ./shared/math/create_generic_pojection.md
+    - Create projection: ./shared/math/create_projection.md
+    - Max: ./shared/math/max.md
+    - Min: ./shared/math/min.md
+    - Precision: ./shared/math/precision.md
+    - Projection: ./shared/math/projection.md
+    - Random: ./shared/math/random.md
+    - Sum: ./shared/math/sum.md
+  - Range: ./shared/range.md
+  - Sleep: ./shared/sleep.md
+  - Slug: ./shared/slug.md
+  - Template: ./shared/template.md
+  - Throttle fn: ./shared/throttle_fn.md
+  - Timeout: ./shared/timeout.md
+  - Timeout fn: ./shared/timeout_fn.md
+  - To number: ./shared/to_number.md
+  - To readable: ./shared/to_readable.md
+  - To string: ./shared/to_string.md
+  - To writable: ./shared/to_writable.md
+  - Toggleable: ./shared/toggleable.md
+  - Try get current component: ./shared/try_get_current_component.md
+  - Try on destroy: ./shared/try_on_destroy.md
+  - Tryit: ./shared/tryit.md
+  - Type: ./shared/type.md
+  - Unstore: ./shared/unstore.md
+  - Utils: ./shared/utils.md
+  - Watchable: ./shared/watchable.md
+- Integrations:
+  - Change Case: ./integrations/change_case.md
+  - Jwt: ./integrations/jwt.md
+  - Qr Code: ./integrations/qr_code.md
+markdown_extensions:
+- meta
+- abbr
+- tables
+- pymdownx.snippets
+- admonition
+- pymdownx.details
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.superfences
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.tabbed:
+    alternate_style: true
+- footnotes
+- pymdownx.caret
+- pymdownx.mark
+- pymdownx.tilde
+- pymdownx.smartsymbols
+- attr_list
+- def_list
+- md_in_html
+- pymdownx.tasklist:
+    custom_checkbox: true
+    clickable_checkbox: true
+extra_css:
+- css/termynal.css
+- css/custom.css
+extra_javascript:
+- js//mermaid.min.js
+- js/termynal.js
+- js/custom.js
+- js/windicss.js
