@@ -63,9 +63,9 @@ Read the [qrcode documentation](https://github.com/soldair/node-qrcode#options-9
 
 | Name        | Description                          | Type                          |
 | ----------- | ------------------------------------ | ----------------------------- |
-| **output**  | The base64 encoded image             | `Writable<string>`            |
-| **pending** | When the image is being generated    | `Writable<boolean>`           |
-| **error**   | When an error occurs                 | `Writable<string | unknown>`  |
+| **output**  | The base64 encoded image             | `Readable<string>`            |
+| **pending** | When the image is being generated    | `Readable<boolean>`           |
+| **error**   | When an error occurs                 | `Readable<string | unknown>`  |
 
 ## 🧪 Playground
 
