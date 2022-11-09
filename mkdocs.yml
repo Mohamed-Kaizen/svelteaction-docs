@@ -1,5 +1,5 @@
 site_name: Svelte Action
-site_url: 'https://svelteaction.netlify.app/'
+site_url: https://svelteaction.netlify.app/
 site_author: Mohamed Nesredin
 site_description: A collection of utility functions, which help you build powerful
   app.
@@ -81,6 +81,7 @@ nav:
   - Preferred Dark: ./core/preferred_dark.md
   - Preferred Languages: ./core/preferred_languages.md
   - Preferred Reduced Motion: ./core/preferred_reduced_motion.md
+  - Push Notification: ./core/push_notification.md
   - Raf Fn: ./core/raf_fn.md
   - Resize Observer: ./core/resize_observer.md
   - Supported: ./core/supported.md
@@ -166,7 +167,9 @@ nav:
   - Utils: ./shared/utils.md
   - Watchable: ./shared/watchable.md
 - Integrations:
+  - Async Validator: ./integrations/async_validator.md
   - Change Case: ./integrations/change_case.md
+  - Firebase Cloud Messaging: ./integrations/fcm.md
   - Jwt: ./integrations/jwt.md
   - Qr Code: ./integrations/qr_code.md
 markdown_extensions:

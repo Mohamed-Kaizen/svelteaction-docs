@@ -6,6 +6,7 @@ import pathlib
 import yaml
 
 cores = [
+    "push_notification",
     "window_size",
     "broadcast_channel",
     "mouse",
@@ -49,7 +50,7 @@ cores = [
     "supported",
 ]
 
-integrations = ["qr_code", "change_case", "jwt"]
+integrations = ["qr_code", "change_case", "jwt", "fcm", "async_validator"]
 
 shareds = [
     "adjust_with_unit",
