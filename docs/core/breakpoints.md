@@ -30,19 +30,24 @@ demo_link: https://svelte.dev/repl/6a1576a9bff349af99d0f19be7bb9ceb?version=3.52
 
 ### Arguments
 
-| Name        | Description                          | Type                          | Required |
-| ----------- | ------------------------------------ | ----------------------------- | -------- |
-| **breakpoints** 
+| Name            | Description                          | Type                     | Required |
+| --------------- | ------------------------------------ | ------------------------ | -------- |
+| **breakpoints** | The breakpoints to use.              | `Record<string, number>` | Yes      |
 
 ### Returns
 
 | Name        | Description                                    | Type                          |
 | ----------- | -----------------------------------------------| ----------------------------- |
-| **state**   | The state of the async function                | Readable(T)                   |
-| **is_ready**| Whether the async function is ready to execute | Readable(boolean)             |
-| **is_loading**| Whether the async function is loading        | Readable(boolean)             |
-| **error**   | The error of the async function                | Readable(unknown)             |
-| **execute** | A function to execute the async function. It can accept a `delay` option to delay the execution and an `arg` option to pass an argument to the async function. | `function(delay?: number, ...args: any[])` |
+| **greater** | A function that checks if the breakpoint is greater than the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **greater_or_equal** | A function that checks if the breakpoint is greater than or equal to the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **smaller** | A function that checks if the breakpoint is smaller than the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **smaller_or_equal** | A function that checks if the breakpoint is smaller than or equal to the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **between** | A function that checks if the breakpoint is between the current breakpoint. | `(breakpoint: string, breakpoint2: string) => Readable<boolean>` |
+| **is_greater**| A function that checks if the breakpoint is greater than the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **is_greater_or_equal** | A function that checks if the breakpoint is greater than or equal to the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **is_smaller** | A function that checks if the breakpoint is smaller than the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **is_smaller_or_equal** | A function that checks if the breakpoint is smaller than or equal to the current breakpoint. | `(breakpoint: string) => Readable<boolean>` |
+| **is_in_between** | A function that checks if the breakpoint is between the current breakpoint. | `(breakpoint: string, breakpoint2: string) => Readable<boolean>` |
 
 ## 🧪 Playground
 
